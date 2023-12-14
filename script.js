@@ -37,7 +37,6 @@
 //     }
 // }
 
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // for (let key in salaries) {
 //     if(!isNaN(salaries[key])){
@@ -45,6 +44,22 @@
 //     }
 // }
 
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // console.log(`Jami narxi: ${total}`)
+
+
+let arr = [1, 2, 3, [4, 11 ,7]]
+
+let total = 0,
+    s = 0,
+    b = 0
+
+for(let i=0; i<arr.length; i++){
+    s += arr[i]
+    for(let j=0; j<arr[i].length; j++){
+        total += arr[i][j]
+        b = total + s
+    }
+}
+
+console.log(b)
